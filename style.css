@@ -117,23 +117,28 @@ nav.site-nav a[aria-current="page"] {
   display: block;
 }
 
-.slide-welcome.active {
+.hero-slideshow .slide.slide-welcome.active {
   display: flex;
 }
 
 .slide-welcome {
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
+  justify-content: center;
   padding: 2.5rem;
   flex-wrap: wrap;
 }
 
 .slide-welcome .headshot {
-  width: 260px;
-  max-width: 40%;
+  width: 280px;
+  max-width: 100%;
   flex-shrink: 0;
   object-fit: cover;
   display: block;
+}
+
+.slide-welcome .welcome-copy {
+  max-width: 420px;
 }
 
 .slide-welcome .welcome-copy h2 {
@@ -144,7 +149,6 @@ nav.site-nav a[aria-current="page"] {
 
 .slide-welcome .welcome-copy p {
   margin: 0 0 1.5rem;
-  max-width: 34ch;
 }
 
 .slide-welcome .welcome-copy a { color: var(--ink); }
